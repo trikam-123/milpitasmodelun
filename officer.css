@@ -232,3 +232,10 @@ footer {
     height: 300px;
   }
 }
+  /* Navbar */
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
