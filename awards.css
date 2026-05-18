@@ -270,9 +270,12 @@ footer {
     font-size: 36px;
   }
 
-     .hero {
-    width: 100%;
-  }
+.hero {
+  height: auto;
+  min-height: 100vh;
+  padding: 140px 20px 60px;
+  background-position: center;
+}
 
   .stanford-text,
   .bear-text,
@@ -303,9 +306,6 @@ footer {
     height: 220px;
   }
 
-  .hero h1 {
-    font-size: 52px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -321,9 +321,14 @@ footer {
     gap: 20px;
   }
 
-   .hero {
-    height:100%;
-    width: 100%;
-  }
+.hero {
+  height: auto;
+  min-height: 100vh;
+  padding: 130px 15px 50px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
 
 }
