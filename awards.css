@@ -305,4 +305,10 @@ footer {
   .nav-links {
     gap: 20px;
   }
+
+   .hero {
+    height: auto;
+    width: 100%;
+  }
+
 }
