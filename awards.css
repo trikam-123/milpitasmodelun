@@ -259,24 +259,19 @@ footer {
     grid-template-columns: 1fr;
   }
 
-    .nav-links {
+  .nav-links {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 10px;
   }
 
-    .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 10px;
+  .hero h1 {
+    font-size: 36px;
   }
 
      .hero {
     width: 100%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
   }
 
   .stanford-text,
@@ -327,7 +322,7 @@ footer {
   }
 
    .hero {
-    height: auto;
+    height:90vh;
     width: 100%;
   }
 

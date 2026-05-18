@@ -323,8 +323,9 @@ footer {
   }
 
   .hero {
-    height: auto;
+    height: 90vh;
     width: 100%;
+    background-position: center 80%;
   }
 
   /* Join section */
@@ -335,6 +336,7 @@ footer {
   .join-text h2 {
     font-size: 28px;
   }
+
   .about {
   margin-top: 20px;  /* removes the negative margin on small screens */
 }
