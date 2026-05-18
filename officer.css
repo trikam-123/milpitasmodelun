@@ -229,13 +229,19 @@ footer {
   }
 
   .officer-card img {
-    height: 300px;
+    height: 420px;
   }
-}
-  /* Navbar */
-  .nav-links {
+
+    .nav-links {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 10px;
   }
+
+   .hero {
+    width: 100%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  }
+}
