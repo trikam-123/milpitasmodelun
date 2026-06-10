@@ -259,24 +259,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 10px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-.hero {
-  height: auto;
-  min-height: 100vh;
-  padding: 140px 20px 60px;
-  background-position: center;
-}
-
   .stanford-text,
   .bear-text,
   .scv-text,
@@ -306,6 +288,9 @@ footer {
     height: 220px;
   }
 
+  .hero h1 {
+    font-size: 52px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -320,15 +305,4 @@ footer {
   .nav-links {
     gap: 20px;
   }
-
-.hero {
-  height: auto;
-  min-height: 100vh;
-  padding: 130px 15px 50px;
-}
-
-.hero h1 {
-  font-size: 32px;
-}
-
 }
