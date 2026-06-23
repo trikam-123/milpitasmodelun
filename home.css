@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #003262;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items:center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display:inline-block;
+  transition:0.3s ease;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 20;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover{
+    background: rgba(255,255,255,0.12);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 20px; 
+  background:
+  linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
+    url('https://patch.com/img/cdn/users/457040/2013/04/raw/14330df945a1e0699586e7d3beac2d90.jpg');
+  background-size: cover;
+  background-position: center 10%;
+  text-align: center;
+  position:relative;
+}
+
+.hero h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+
+.letter {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,1)
+  );
+  backdrop-filter: blur(10px);
+  margin: -60px auto 0 auto;
+  max-width: 95%;
+  border-radius: 40px;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.letter-container {
+  max-width: 760px;
+  margin: auto;
+}
+
+.letter-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003262;
+  margin-bottom: 24px;
+}
+
+.letter-container p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #1a2a3a;
+}
+
+.about {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right:20px;
+   margin-left:20px;
+  position: relative;
+  z-index: 3;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 36px 36px;
+  flex: 1;
+  min-width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #7aafd4;
+  margin-bottom: 8px;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #003262;
+  margin-bottom: 14px;
+}
+
+.about-card p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #3a4a5a;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #003262;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.card-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  background-color: #003262;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: #ddd;
+}
