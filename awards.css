@@ -259,6 +259,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
+      .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
   .stanford-text,
   .bear-text,
   .scv-text,
@@ -302,7 +309,4 @@ footer {
     margin: 16px 14px;
   }
 
-  .nav-links {
-    gap: 20px;
-  }
 }
