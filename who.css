@@ -87,7 +87,7 @@
   padding: 100px 20px 20px; 
   background:
   linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
-    url('https://s.abcnews.com/images/International/who-gty-rc-210121_1611240533789_hpMain.jpg?w=992');
+    url('who.jpg');
   background-size: cover;
   background-position: center 10%;
   text-align: center;
@@ -127,4 +127,38 @@ footer {
 
 .icons a:hover {
   color: #ddd;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 30, 70, 0.97);
+    padding: 12px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 24px;
+  }
 }
