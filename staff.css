@@ -50,7 +50,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(190, 190, 190, 0.516);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255,255,255,0.2);
@@ -70,7 +70,7 @@
 }
 
 .dropdown-content a:hover{
-    background: rgba(255,255,255,0.12);
+    background: rgba(212, 212, 212, 0.639);
 }
 
 .dropdown:hover .dropdown-content{
@@ -215,3 +215,4 @@ footer {
     padding: 10px 24px;
   }
 }
+

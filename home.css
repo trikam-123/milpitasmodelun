@@ -202,6 +202,30 @@ body {
   box-shadow: 0 8px 15px rgba(0,0,0,0.2);
 }
 
+.conference{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right:20px;
+  margin-left:20px;
+  position: relative;
+  z-index: 3;
+}
+
+.conference-container{
+  background: #fff;
+  border-radius: 22px;
+  padding: 36px 36px;
+  flex: 1;
+  min-width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.conference-container p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #1a2a3a;
+}
+
 footer {
   text-align: center;
   padding: 30px;
@@ -257,3 +281,5 @@ footer {
     padding: 10px 24px;
   }
 }
+
+
