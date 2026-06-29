@@ -129,6 +129,26 @@ footer {
   color: #ddd;
 }
 
+@media (max-width: 768px) {
+
+  /* Hero */
+  .hero {
+    height: 50vh;
+    padding: 80px 16px 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  /* Coming soon */
+  h2 {
+    font-size: 24px;
+    margin: 20px;
+  }
+}
+
 .hamburger {
   display: none;
   background: none;
