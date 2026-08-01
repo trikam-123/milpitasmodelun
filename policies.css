@@ -134,6 +134,14 @@ body{
   margin-top: 12px;
 }
 
+.info-container ul {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #1a2a3a;
+  margin-top: 12px;
+  margin-left:15px; 
+}
+
 .info-container h2 + p,
 .info-container h3 + p {
   margin-top: 8px;
