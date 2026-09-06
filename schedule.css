@@ -192,6 +192,22 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .hamburger {
     display: block;
     position: absolute;
@@ -216,17 +232,6 @@ footer {
 
   .nav-links a {
     padding: 10px 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-    position: relative;
   }
 
   .schedule {
