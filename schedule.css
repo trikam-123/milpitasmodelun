@@ -103,7 +103,7 @@ body{
 }
 
 .schedule {
-background: white;
+  background: white;
   margin: 30px auto;
   width: 50%;
   border-radius: 40px;
@@ -194,6 +194,9 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-links {
@@ -213,5 +216,37 @@ footer {
 
   .nav-links a {
     padding: 10px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .schedule {
+    width: 90%;
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+
+  .group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 14px 0;
+  }
+
+  .group p {
+    min-width: unset;
+  }
+
+  .group h1 {
+    font-size: 16px;
   }
 }
