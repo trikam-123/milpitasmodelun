@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QG5KWRJECV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KXH5C6CG');</script>
+<!-- End Google Tag Manager -->
 
-  gtag('config', 'G-QG5KWRJECV');
-</script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -23,6 +21,11 @@
 
 <body>
     
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXH5C6CG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
   <header class="navbar">
   <nav>
   <button class="hamburger" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')">
@@ -72,7 +75,61 @@
 
 <section class="hero">
     <h1>Milpitas MUNC I</h1>
+    <div id="countdown" class="countdown">
+      <div class="countdown-item">
+        <span class="countdown-number" id="cd-days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="cd-hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="cd-minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span class="countdown-number" id="cd-seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
 </section>
+
+
+
+<script>
+  // Countdown to MMUNC I — November 21, 2026, 9:00 AM local time
+  const conferenceDate = new Date("2026-11-21T09:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = conferenceDate - now;
+    const countdownEl = document.getElementById("countdown");
+
+    if (diff <= 0) {
+      countdownEl.innerHTML = '<div class="countdown-expired">MMUNC I has begun — see you there!</div>';
+      clearInterval(countdownInterval);
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("cd-days").textContent = String(days).padStart(2, "0");
+    document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("cd-minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("cd-seconds").textContent = String(seconds).padStart(2, "0");
+  }
+
+  updateCountdown();
+  const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+
+
+
+
 
 <section class="letter">
     <div class="letter-container">
