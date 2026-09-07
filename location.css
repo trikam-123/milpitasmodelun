@@ -83,16 +83,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background:
-  linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), rgb(152, 152, 152);
+  background:#cccccc;
   text-align: center;
   padding-top: 80px;
   color: white;
   background-size: cover;
-  background-position: center 40%;
   position: relative;
-  border-bottom-left-radius: 50% 12%;
-  border-bottom-right-radius: 50% 12%;
   overflow: hidden;
 }
 
