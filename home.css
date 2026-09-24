@@ -105,9 +105,10 @@ body {
 }
 
 .hero p{
-  fon-size:20px;
+  font-size:20px;
   color:white;
   margin:15px;
+}
 
       .countdown {
         display: flex;
