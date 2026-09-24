@@ -104,6 +104,10 @@ body {
   margin-bottom: 30px;
 }
 
+.hero p{
+  fon-size:20px;
+  color:white;
+  margin:15px;
 
       .countdown {
         display: flex;
