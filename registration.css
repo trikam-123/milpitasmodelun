@@ -177,6 +177,20 @@
     text-align:center;
 }
 
+.note-card {
+  flex: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.note-card p {
+  margin-bottom: 0;
+}
+
+.note-card .card-btn {
+  margin-bottom: 0;
+}
+
 
 footer {
   text-align: center;
