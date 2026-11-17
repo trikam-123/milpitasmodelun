@@ -119,10 +119,6 @@
   flex-wrap: wrap;
 }
 
-.map-text {
-  flex: 1;
-}
-
 h2 {
   font-size: 25px;
   margin: 5px;
@@ -150,7 +146,6 @@ h2 {
   height: 220px;         /* fixed height keeps cards even */
   object-fit: cover;     /* crops instead of stretching */
 }
-
 
 .info-card {
   background: rgba(255, 255, 255, 0.09);
