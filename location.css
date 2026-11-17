@@ -144,6 +144,20 @@ h2 {
   flex: 1;
 }
 
+.map-card img {
+  display: block;
+  width: 100%;           /* fills the box width */
+  height: 220px;         /* fixed height keeps cards even */
+  object-fit: cover;     /* crops instead of stretching */
+}
+
+
+.info-card {
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 10px;
+  flex: 1;
+}
 
 h4 {
   text-align: center;
