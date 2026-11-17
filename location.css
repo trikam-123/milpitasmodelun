@@ -164,6 +164,11 @@ h2 {
   line-height: 1.8;
 }
 
+.map-image {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+
 h4 {
   text-align: center;
   font-size: 28px;
