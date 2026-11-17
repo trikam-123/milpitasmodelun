@@ -186,7 +186,7 @@ h2 {
 .map-image img {
   display: block;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
