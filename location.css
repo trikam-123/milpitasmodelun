@@ -113,10 +113,9 @@
 }
 
 
-
 .map-container {
   width: 100%;
-  max-width: 1100px;
+  max-width: none; /* Removes the 1100px limit */
   min-width: 0;
   margin: 0 auto;
   display: flex;
