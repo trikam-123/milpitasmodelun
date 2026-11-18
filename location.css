@@ -308,16 +308,6 @@ footer {
     display: block;
   }
 
-    .maps {
-    margin: 20px 10px;
-    padding: 25px 12px;
-    border-radius: 16px;
-  }
-
-  .map-image img {
-    max-width: 100%;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -335,6 +325,75 @@ footer {
 
   .nav-links a {
     padding: 10px 24px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* Main blue section */
+  .maps {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+    padding: 25px 15px;
+    border-radius: 16px;
+  }
+
+  /* Stack the two sections vertically */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Remove individual blue boxes */
+  .info-card {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+    box-shadow: none;
+  }
+
+  /* Section headings */
+  .info-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: white;
+    text-align: left;
+  }
+
+  /* Remove bullet points */
+  .info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Make text readable and prevent overflow */
+  .info-card li {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+    color: white;
+  }
+
+  /* Keep map within screen */
+  .map-container,
+  .map-image {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .map-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 
